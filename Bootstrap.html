@@ -49,7 +49,6 @@
 
  
 <!-- header section -->
-
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid">
 <div class="header-section clear">
@@ -58,14 +57,16 @@
             <div class="navbar-brand">
                 <a href="#" class="navbar-brand mb-0 h1">
                     <img class="d-inline-block align-top" src="logo/bootstrap.png" alt="">
-
+                    
                     <span>Bootstrap Theme</span>
                 </a>
             </div>
         </div>
+        
         <div class="header-menu f-left">
             <div class="primary-menu">
-                <ul class="navbar-nav">
+
+                <ul class="navbar-nav"> 
                 <li class="home"><a href="#" class="a">التواصل</a></li>
                 <li class="solid"><a href="#" class="a">قدم طلبك</a></li>
                 <li class="solid1"><a href="#" class="a">خدماتنا<svg class="Svg-icon" viewBox="0 0 64 64">
@@ -75,31 +76,48 @@
                             </svg></a>
 
                         <ul class="drop">
-                            <li><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
-                            <li><a href="#">استلام الدوائر في وقتها</a></li>
-                            <li><a href="#">نتحقق إلكترونيًا من جميع الأعضاء</a></li>
-                            <li><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
+                            <li class="menu-item"><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
+                            <li class="menu-item"><a href="#">استلام الدوائر في وقتها</a></li>
+                            <li class="menu-item"><a href="#">نتحقق إلكترونيًا من جميع الأعضاء</a></li>
+                            <li class="menu-item"><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
                         </ul>
                     <li class="solid"><a href="#" class="a">المميزات</a></li>
                     <li class="solid"><a href="#" class="a">الرئيسية</a></li> 
                 </ul>
             </div>
         </div>
-        
-    <label for="checkbox" class="hamburger" id="hamburger">
-        <input type="checkbox" id="checkbox">
-        <span class="line line-top"></span>
-        <span class="line line-middle"></span>
-        <span class="line line-bottom"></span>
-    </label>
-    
-    <!-- <div class="toggler">
-            <button class="navbar-toggler" type="button" data-target="#primary-menu" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-</div>
-            
+
+                <!-- Toggler -->
+                <div class="hamburger-menu">
+                    <input class="box" type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="hamburger">
+                        <span class="line line-top"></span>
+                        <span class="line line-middle"></span>
+                        <span class="line line-bottom"></span>
+                        
+                    </label>
+
+            <ul class="menu-box">
+                <li class="menu"><a href="#" class="a">الرئيسية</a></li>
+                <li class="menu"><a href="#" class="a">المميزات</a></li>
+                <li class="menu"><a href="#" class="a">التواصل</a></li>
+                <li class="menu"><a href="#" class="a">قدم طلبك</a></li>
+                <li class="solid1"><a href="#" class="a">خدماتنا<svg class="Svg-icon" viewBox="0 0 64 64">
+                            <path
+                                d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z">
+                            </path>
+                        </svg></a>
+                    <ul class="drop">
+                        <li class="menu-item"><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
+                        <li class="menu-item"><a href="#">استلام الدوائر في وقتها</a></li>
+                        <li class="menu-item"><a href="#">نتحقق إلكترونيًا من جميع الأعضاء</a></li>
+                        <li class="menu-item"><a href="#">اختيارات مرنة تلائم احتياجاتك</a></li>
+                    </ul> </li>
+
+                <a class="submit-btn" href="#">تسجيل الدخول</a> 
+            </ul>
+        </div>
+
         <div class="header-button f-left">
         <div class="nav-item"> <a class="submit-btn" href="#">تسجيل الدخول</a></div>
         </div> 
@@ -232,73 +250,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
 
 
 <!-- Footer -->
-<!-- <footer class="">
-    <div class="new_footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                        <p>Don’t miss any updates of our new templates and extensions.!</p>
-                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
-                            _lpchecked="1">
-                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                            <p class="mchimp-errmessage" style="display: none;"></p>
-                            <p class="mchimp-sucmessage" style="display: none;"></p>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
-                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-                        <ul class="list-unstyled f_list">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Android App</a></li>
-                            <li><a href="#">ios App</a></li>
-                            <li><a href="#">Desktop</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">My tasks</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
-                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-                        <ul class="list-unstyled f_list">
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Term &amp; conditions</a></li>
-                            <li><a href="#">Reporting</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
-                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-                        <div class="f_social_icon">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
-                            <a href="#" class="fab fa-pinterest"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bg">
-            <div class="footer_bg_one"></div>
-            <div class="footer_bg_two"></div>
-        </div>
-    </div>
-   
-</footer> -->
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="bootstrap" viewBox="0 0 118 94">
         <title>Bootstrap</title>
@@ -341,6 +293,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
     </footer>
 </div>
 
+<!-- End Footer -->
 
 <!-- Scripts -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
